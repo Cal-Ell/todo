@@ -1,19 +1,21 @@
 import React from 'react';
-import Header from './Header';
 import { Box, Container } from '@mui/system';
+import { useSelector } from 'react-redux';
+import { Button } from '@mui/material';
 
 
 const Todo = () => {
+  const todoList = useSelector((state) => state.todo.todoList);
+  const filterStatus = useSelector((state) => state.todo.filterStatus);
+
+
   return (
     <div>
-        <Container maxWidth="xs">
-            <Box 
-                sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <Header />
-            </Box>
-            
-        </Container>
-        
+      <Box 
+        sx={{border: '10px dashed grey', p: 34, marginTop: '60px'}}
+      >
+        <Button variant='contained'>Add Task</Button>
+      </Box>
     </div>
   )
 }

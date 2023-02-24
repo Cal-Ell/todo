@@ -27,3 +27,9 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+.todoContainer {
+    max-width: 750px;
+    margin: 0 auto;
+    border: black 5rem;
+}
