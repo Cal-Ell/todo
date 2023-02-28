@@ -5,8 +5,6 @@ import toast from 'react-hot-toast';
 
 const TodoItem = ({id, title, completed}) => {
     const dispatch = useDispatch();
-    const state = useSelector(state => state.todos);
-    //const [checked, setChecked] = useState(false);
 
     
     const handleDelete = () => {
