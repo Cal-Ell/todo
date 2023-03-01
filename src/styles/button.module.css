@@ -1,0 +1,21 @@
+.button {
+	display: inline-block;
+	height: auto;
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 1.6rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.button:hover {
+	padding: 1rem;
+	border: none;
+	background-color: rgba(240, 100, 105, 0.863);
+	width: 150px;
+	cursor: pointer;
+}
